@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="relative">
       <div
         className="bg-cover bg-center w-full h-[80vh]"
-        style={{ backgroundImage: "url(/bg.jpg)" }}
+        style={{ backgroundImage: "url(/bg.jpeg)" }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
 

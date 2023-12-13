@@ -22,11 +22,11 @@ const ServiceCard = ({ icon, title, description }) => {
   };
 
   return (
-    <div className="rounded-lg bg-gray-200 m-4 text-center p-4 flex flex-col">
+    <div className="rounded-xl bg-gray-200 m-10 text-center p-6 flex flex-col gap-2">
       <IconContext.Provider value={{ size: "2em", className: "mb-2 mx-auto" }}>
         {getIconComponent(icon)}
       </IconContext.Provider>
-      <h3>{title}</h3>
+      <h3 className="font-semibold text-lg">{title}</h3>
       <p>{description}</p>
     </div>
   );
