@@ -7,6 +7,7 @@ import ServiceCard from "./ServiceCard";
 import serviceData from "./serviceData";
 import Contact from "./Contact";
 import Event from "./Event";
+import Footer from "./Footer";
 
 export {
     Hero,
@@ -18,4 +19,5 @@ export {
     serviceData,
     Contact,
     Event,
+    Footer,
 }
