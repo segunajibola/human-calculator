@@ -10,10 +10,10 @@ export default function NavbarItem({ label, active, setActive }) {
     <Link
       onClick={handleClick}
       href="/"
-      className={`cursor-pointer transition ${
+      className={`cursor-pointer font-semibold transition ${
         active === label
-          ? "text-red-200 cursor-default"
-          : "text-gray-500 hover:text-gray-300 cursor-pointer transition"
+          ? "text-gray-900 cursor-default"
+          : "text-gray-500 hover:text-gray-400 cursor-pointer transition"
       }`}
     >
       {label}
