@@ -5,7 +5,7 @@ import NavbarItem from "./NavBarItem";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function NavBar() {
-  const TOP_OFFSET = 66;
+  const TOP_OFFSET = 50;
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
@@ -13,7 +13,6 @@ export default function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY);
       if (window.scrollY >= TOP_OFFSET) {
         setShowBackground(true);
       } else {
