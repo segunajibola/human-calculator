@@ -2,17 +2,20 @@
 
 import React from "react";
 import { IconContext } from "react-icons";
-import { FaBeer, FaCode, FaSearch } from "react-icons/fa";
+import { FaCode, FaSearch } from "react-icons/fa";
+import { MdCoPresent } from "react-icons/md"
+import { GrWorkshop } from "react-icons/gr"
+import { GiDiscussion } from "react-icons/gi"
 
 const ServiceCard = ({ icon, title, description }) => {
   const getIconComponent = (icon) => {
     switch (icon) {
       case "presentation":
-        return <FaBeer />;
+        return <MdCoPresent />;
       case "workshop":
-        return <FaCode />;
+        return <GrWorkshop />;
       case "consultation":
-        return <FaSearch />;
+        return <GiDiscussion />;
       default:
         return null;
     }
