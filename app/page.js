@@ -1,12 +1,12 @@
-import Image from 'next/image'
-import NavBar from '../components/NavBar'
-import HomePage from '../components/Home'
+import {Hero, About, NavBar, NavBarItem, Services} from '../components'
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
       <NavBar />
-      <HomePage />
+      <Hero />
+      <About />
+      <Services />
     </>
   )
 }
