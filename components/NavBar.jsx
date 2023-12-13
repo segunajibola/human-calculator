@@ -31,6 +31,20 @@ export default function NavBar() {
     setShowMobileMenu((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (showMobileMenu && !event.target.closest('.mobile-menu-container')) {
+        setShowMobileMenu(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [showMobileMenu]);
+
   return (
     <nav className="w-full top-0 fixed z-40">
       <div className={`p-4 ${showBackground ? "bg-gray-800" : "bg-zinc-100"}`}>
