@@ -33,16 +33,16 @@ export default function NavBar() {
 
   return (
     <nav className="w-full top-0 fixed z-40">
-      <div className={`p-4 ${showBackground ? "bg-zinc-400" : "bg-zinc-100"}`}>
+      <div className={`p-4 ${showBackground ? "bg-gray-800" : "bg-zinc-100"}`}>
         <div className="flex items-center justify-between">
-          <div className=" text-lg font-semibold">Tella Omojolade</div>
+          <div className={`text-lg font-semibold ${showBackground ? "text-white" : ""}`}>Tella Omojolade</div>
           <div className="space-x-4 hidden lg:flex">
             <NavbarItem label="Home" active={active} setActive={setActive} />
             <NavbarItem label="About" active={active} setActive={setActive} />
             <NavbarItem label="Contact" active={active} setActive={setActive} />
             <NavbarItem label="Events" active={active} setActive={setActive} />
           </div>
-          <div className="lg:hidden">
+          <div className={`lg:hidden ${showBackground ? "text-white" : ""}`}>
             <RxHamburgerMenu
               className=""
               size={30}

@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
+import { FaWhatsapp, FaX, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-4">
-      <div className="my-10 mx-2 flex justify-between items-center">
+      <div className="my-10 mx-2 flex flex-col justify-between gap-3">
         <div>
-          <p className="font-bold">Quick Links:</p>
-          <ul className="flex flex-col space-x-4">
+          <p className="font-bold mb-3">Quick Links:</p>
+          <ul className="flex flex-col space-y-2">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -25,21 +26,16 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          {/* Add social media icons and links */}
           <p className="font-bold mb-2">Connect with me:</p>
-          <div className="flex space-x-4">
-            {/* Add social media icons and links */}
-            <a href="#" className="text-white hover:text-gray-300">
-              {/* Example social media icon (replace with your own) */}
-              <i className="fab fa-twitter"></i>
+          <div className="flex gap-2">
+            <a href="https://wa.me/2348105729893" className="">
+              <FaWhatsapp size={30}/>
             </a>
-            <a href="#" className="text-white hover:text-gray-300">
-              {/* Example social media icon (replace with your own) */}
-              <i className="fab fa-linkedin"></i>
+            <a href="https://wa.me/2348105729893" className="">
+              <FaInstagram size={30}/>
             </a>
-            <a href="#" className="text-white hover:text-gray-300">
-              {/* Example social media icon (replace with your own) */}
-              <i className="fab fa-instagram"></i>
+            <a href="https://wa.me/2348105729893" className="">
+              <FaYoutube size={30}/>
             </a>
           </div>
         </div>
