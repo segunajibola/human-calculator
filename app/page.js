@@ -1,4 +1,4 @@
-import {Hero, About, NavBar, NavBarItem, Services} from '../components'
+import { Hero, About, NavBar, Services, Contact, Event } from "../components";
 
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Contact />
+      <Event />
     </>
-  )
+  );
 }

@@ -5,6 +5,8 @@ import NavBarItem from "./NavBarItem";
 import Services from "./Services";
 import ServiceCard from "./ServiceCard";
 import serviceData from "./serviceData";
+import Contact from "./Contact";
+import Event from "./Event";
 
 export {
     Hero,
@@ -14,4 +16,6 @@ export {
     Services,
     ServiceCard,
     serviceData,
+    Contact,
+    Event,
 }

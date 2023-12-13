@@ -56,8 +56,8 @@ export default function NavBar() {
           <div className="bg-gray-300 text-white p-4 flex flex-col gap-4">
             <NavbarItem label="Home" active={active} setActive={setActive} />
             <NavbarItem label="About" active={active} setActive={setActive} />
-            <NavbarItem label="Contact" active={active} setActive={setActive} />
             <NavbarItem label="Events" active={active} setActive={setActive} />
+            <NavbarItem label="Contact" active={active} setActive={setActive} />
           </div>
         </div>
       )}
