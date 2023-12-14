@@ -67,7 +67,7 @@ export default function NavBar() {
       </div>
       {showMobileMenu && (
         <div className="lg:hidden">
-          <div className="bg-gray-300 text-white p-4 flex flex-col gap-4">
+          <div className="mobile-menu-container bg-gray-300 text-white p-4 flex flex-col gap-4">
             <NavbarItem label="Home" active={active} setActive={setActive} />
             <NavbarItem label="About" active={active} setActive={setActive} />
             <NavbarItem label="Events" active={active} setActive={setActive} />
